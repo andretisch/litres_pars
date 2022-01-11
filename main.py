@@ -51,7 +51,9 @@ def parse_book(url):
 
 
 def main(catalogue):
-
+    '''
+    catalogue : Here I put second part url of catalogues what I want to download 
+    '''
     boks_links =[]
     for i in range(1,10):
         if i == 1:
@@ -67,7 +69,7 @@ def main(catalogue):
     return boks_links
 
 
-# Press the green button in the gutter to run the script.
+# Put in main() second part of URL
 if __name__ == '__main__':
     books_list = main('/knigi-fentezi/boevoe/')
     for book in books_list:
